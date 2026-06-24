@@ -2,6 +2,9 @@
 
 # dependencies
 node_modules/
+.npm/
+.yarn/
+.pnpm-store/
 
 # Expo
 .expo/
@@ -25,16 +28,36 @@ expo-env.d.ts
 npm-debug.*
 yarn-debug.*
 yarn-error.*
+pnpm-debug.*
+bun-debug.*
+*.log
 
 # macOS
 .DS_Store
 *.pem
 
 # local env files
+.env
+.env.*
 .env*.local
 
 # typescript
 *.tsbuildinfo
+
+# tests and local caches
+coverage/
+.jest/
+.cache/
+
+# local AI/editor agent state
+.agents/
+.codex/
+.claude/
+AGENTS.md
+CLAUDE.md
+KIDDO_GUIDE.md
+WALKTHROUGH.md
+EVALUATION.md
 
 # generated native folders
 /ios
